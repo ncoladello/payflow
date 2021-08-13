@@ -62,7 +62,9 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.only(
                         top: 40.0, right: 40.0, left: 40.0),
                     child: SocialLoginButton(
-                      onTap: controller.googleSignIn,
+                      onTap: () {
+                        controller.googleSignIn(context);
+                      },
                     ),
                   )
                 ],
