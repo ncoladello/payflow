@@ -27,7 +27,7 @@ class AppWidget extends StatelessWidget {
         "/splash": (context) => SplashPage(),
         "/home": (context) => HomePage(),
         "/login": (context) => LoginPage(),
-        "/barcode_scanner": (context) => BarCodeScannerPage()
+        "/barcode_scanner": (context) => BarcodeScannerPage()
       },
     );
   }
