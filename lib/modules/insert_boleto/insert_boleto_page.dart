@@ -5,8 +5,10 @@ class InsertBoletoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: null,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("insert boleto page"),
+      ),
     );
   }
 }
