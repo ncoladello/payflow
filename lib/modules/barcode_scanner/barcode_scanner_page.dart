@@ -91,12 +91,12 @@ class _BarcodeScannerPageState extends State<BarcodeScannerPage> {
                   ],
                 ),
                 bottomNavigationBar: SetLabelButtons(
-                  primaryLabel: "Inserir código do boleto",
-                  primaryOnPressed: () {
+                  labelPrimary: "Inserir código do boleto",
+                  onTapPrimary: () {
                     controller.status = BarcodeScannerStatus.error("Error");
                   },
-                  secondaryLabel: "Adicionar da galeria",
-                  secondaryOnPressed: controller.scanWithImagePicker,
+                  labelSecondary: "Adicionar da galeria",
+                  onTapSecondary: controller.scanWithImagePicker,
                 )),
           ),
           ValueListenableBuilder<BarcodeScannerStatus>(
@@ -106,12 +106,12 @@ class _BarcodeScannerPageState extends State<BarcodeScannerPage> {
                   return Align(
                       alignment: Alignment.bottomLeft,
                       child: BottomSheetWidget(
-                          primaryLabel: "Escanear novamente",
-                          primaryOnPressed: () {
+                          labelPrimary: "Escanear novamente",
+                          onTapPrimary: () {
                             controller.scanWithCamera();
                           },
-                          secondaryLabel: "Digitar código",
-                          secondaryOnPressed: () {},
+                          labelSecondary: "Digitar código",
+                          onTapSecondary: () {},
                           title:
                               "Não foi possível identificar um código de barras.",
                           subtitle:
